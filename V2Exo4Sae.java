@@ -38,11 +38,11 @@ public class ExerciceSAe {
 	    		System.out.println("les 2 chaine sont identiques");
 	    	}
 	    	else {
-	    		if(chaineUn.charAt(0) == chaineDeux.charAt(0)) {
-	    			System.out.println("la premiére lettre est identique : " + chaineUn.charAt(0));
+	    		if(chaineUn.toLowerCase().charAt(0) == chaineDeux.toLowerCase().charAt(0)) {
+	    			System.out.println("la premiére lettre est identique : " + chaineUn.toUpperCase().charAt(0));
 	    		}
-	    		if(chaineUn.charAt(chaineUn.length() - 1) == chaineDeux.charAt(chaineDeux.length() - 1)) {
-	    			System.out.println("la derniére lettre est identique :" + chaineUn.charAt(chaineUn.length()-1));
+	    		if(chaineUn.toLowerCase().charAt(chaineUn.length() - 1) == chaineDeux.toLowerCase().charAt(chaineDeux.length() - 1)) {
+	    			System.out.println("la derniére lettre est identique :" + chaineUn.toUpperCase().charAt(chaineUn.length()-1));
 	    		}
 	    	}
 	    }
