@@ -5,6 +5,7 @@ puis faire les programme SAE:
   2. Ecrire un programme qui effectue la partie en 2 joueur : définir un joueur(nom) , définir une partie(nombre tours , niveau de difficulté) ,
                                                               Si information incorrecte le programme l'affiche sinon il affiche que toutes les
                                                               info sont correcte
+  
   3.Ecrire un programme qui effectue la partie avec 1 joueur : créer un bot qui devra trouver les anagramme.
   
   
