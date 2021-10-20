@@ -55,14 +55,15 @@ public class StringRLettre {
 			} else {
 				caractereCh = motEntre.charAt(rang);
 			
-				System.out.println("Le mot " + motEntre + " commence par la lettre " + caractere1 + " . ");
-				//for k in range ?
-				//if (){
-					
-				//} else {
-					
-				//}
-				System.out.println("La lettre située au rang " + rang + " est " + caractereCh + " . ");
+				System.out.println("Le mot \"" + motEntre + "\" commence par la lettre \"" + caractere1 + "\" . ");
+			
+				if (caractere1==motEntre.charAt(motEntre.length()-1)){
+					System.out.println("Il se termine aussi par cette lettre.");	
+				} else {
+					System.out.println("Il ne se termine pas par cette lettre.");	
+				}
+				
+				System.out.println("La lettre située au rang " + rang + " est \"" + caractereCh + "\" . ");
 			}
 
 		}	
