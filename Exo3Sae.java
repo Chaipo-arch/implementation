@@ -13,8 +13,8 @@ package sae.exossupp;
 import java.util.Scanner;
 
 /**
- * @version 1
- * @author GroupeAnnagramme
+ * @version 1.0
+ * @author Julie
  */
 
 public class StringRLettre {
