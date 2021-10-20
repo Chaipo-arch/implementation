@@ -31,8 +31,9 @@ public class StringRLettre {
 	public static void main(String[] args) { 
 
 		String motEntre; 
-		Char caractere1;
-		Char caractereCh;
+		Character caractere1;
+		Character caractereCh;
+		Character caractereNew;
 		int rang;
 
         	Scanner saisieClavier = new Scanner(System.in);
@@ -46,18 +47,19 @@ public class StringRLettre {
 			caractere1 = motEntre.charAt(0);
 			
 			System.out.print("Entrez le rang de la lettre à consulter (de 1 à " + motEntre.length() + ") :");
-			rang = saisieClavier.nextInt();
+			rang = saisieClavier.nextInt()-1;
 			
-			if (rang.isEmpty || rang>(motEntre.length()-1)){
+			if (rang<0 || rang>(motEntre.length()-1)){
 				System.out.println("Ce rang est invalide. Relancez le programme.");
 				
 
 			} else {
 				caractereCh = motEntre.charAt(rang);
+				caractereNew = motEntre.toLowerCase();
 			
 				System.out.println("Le mot \"" + motEntre + "\" commence par la lettre \"" + caractere1 + "\" . ");
 			
-				if (caractere1==motEntre.charAt(motEntre.length()-1)){
+				if (caractereNew==motEntre.charAt(motEntre.length()-1)){
 					System.out.println("Il se termine aussi par cette lettre.");	
 				} else {
 					System.out.println("Il ne se termine pas par cette lettre.");	
