@@ -1,5 +1,5 @@
 
-*
+/*
  * Le programme calcule et affiche la puissance d'un nombre donné
  * ConversionString.java                                       06/10/2021
  */
