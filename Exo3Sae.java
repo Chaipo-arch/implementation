@@ -1,4 +1,4 @@
-// Exercice 3 question 2
+// Exercice 3 question 3
 // En cours
 
 /*
@@ -32,17 +32,32 @@ public class StringRLettre {
 
 		String motEntre; 
 		Char caractere1;
+		Char caractereCh;
+		int rang;
 
         	Scanner saisieClavier = new Scanner(System.in);
 		System.out.print("Entrez un mot :");
 		motEntre = saisieClavier.nextLine();
 			
 		if (motEntre.isEmpty()){
-			System.out.println("Vous avez entré une chaîne vide. Recommencez.");				
+			System.out.println("Vous n'avez pas entré de mot. Recommencez.");				
 				
 		} else {
 			caractere1 = motEntre.charAt(0);
-			System.out.println("Le mot " + motEntre + " commence par la lettre " + caractere1 + " . ");
+			
+			System.out.print("Entrez le rang de la lettre à consulter (de 1 à " + motEntre.length() + ") :");
+			rang = saisieClavier.nextInt();
+			
+			if (rang.isEmpty OR rang>motEntre.length()){
+				System.out.println("Ce rang est invalide. Relancez le programme.");
+				
+
+			} else {
+				caractereCh = motEntre.charAt(rang);
+			
+				System.out.println("Le mot " + motEntre + " commence par la lettre " + caractere1 + " . ");
+				System.out.println("La lettre située au rang " + rang + " est " + caractereCh + " . ");
+			}
 
 		}	
 	}
