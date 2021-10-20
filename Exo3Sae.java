@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 /**
  * @version 1.0
- * @author Julie
+ * @author SrtaJulie
  */
 
 public class StringRLettre {
