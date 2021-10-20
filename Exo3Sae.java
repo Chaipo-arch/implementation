@@ -59,7 +59,7 @@ public class StringRLettre {
 			
 				System.out.println("Le mot \"" + motEntre + "\" commence par la lettre \"" + caractere1 + "\" . ");
 			
-				if (caractereNew==motEntre.charAt(motEntre.length()-1)){
+				if (caractereNew.charAt(0)==caractereNew.charAt(motEntre.length()-1)){
 					System.out.println("Il se termine aussi par cette lettre.");	
 				} else {
 					System.out.println("Il ne se termine pas par cette lettre.");	
