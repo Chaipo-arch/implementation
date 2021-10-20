@@ -33,7 +33,7 @@ public class StringRLettre {
 		String motEntre; 
 		Character caractere1;
 		Character caractereCh;
-		Character caractereNew;
+		String caractereNew;
 		int rang;
 
         	Scanner saisieClavier = new Scanner(System.in);
