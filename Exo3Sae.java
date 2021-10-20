@@ -1,4 +1,4 @@
-// Exercice 3 question 3
+// Exercice 3 question 4
 // En cours
 
 /*
@@ -56,6 +56,12 @@ public class StringRLettre {
 				caractereCh = motEntre.charAt(rang);
 			
 				System.out.println("Le mot " + motEntre + " commence par la lettre " + caractere1 + " . ");
+				//for k in range ?
+				//if (){
+					
+				//} else {
+					
+				//}
 				System.out.println("La lettre située au rang " + rang + " est " + caractereCh + " . ");
 			}
 
