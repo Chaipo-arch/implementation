@@ -48,7 +48,7 @@ public class StringRLettre {
 			System.out.print("Entrez le rang de la lettre à consulter (de 1 à " + motEntre.length() + ") :");
 			rang = saisieClavier.nextInt();
 			
-			if (rang.isEmpty OR rang>motEntre.length()){
+			if (rang.isEmpty || rang>(motEntre.length()-1)){
 				System.out.println("Ce rang est invalide. Relancez le programme.");
 				
 
