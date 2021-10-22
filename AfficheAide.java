@@ -19,6 +19,7 @@ public class AfficheAide {
      * @param args inutilisé
      */
     public static void main(String[] args){
-        final String Aide = "aCompleter";
+        final String AIDE = "aCompleter";
+        System.out.print(AIDE);
         
 } 
