@@ -38,7 +38,7 @@ public class AfficheAide {
                             +"marque pas de point, et c'est au joueur suivant de continuer la partie."
                             +"\n \n Le joueur trouve l'anagramme. Il marque un point. C'est ensuite "
                             +"au joueur suivant de continuer./n/n"
-                            +"A chaque tour, les deux joueurs jouent successivement. Le score est "+
+                            +"A chaque tour, les deux joueurs jouent successivement. Le score est "
                             +"affiché en permanence./n"
                             +"En fin de partie, l'application affiche le score des deux joueurs et le"
                             +"nom du gagnant, ou bien indique /n"
