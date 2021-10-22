@@ -19,7 +19,7 @@ public class AfficheAide {
     public static void main(String[] args){
         final String AIDE = "Au lancement du jeu, un mot est choisi de manière"
 			    +" aléatoire. Il est aussitôt donné au joueur qui"
-			    +" doit trouver l'anagramme de ce mot. \n\n\n"
+			    +" doit trouver l'anagramme de ce mot. \n\n"
 			    +"Plusieurs cas de figure sont ensuite possibles"
 			    +" :\n- Si le joueur n'a pas de réponse, il passe"
 			    +" son tour, et donc ne marque pas de point.\n"
@@ -29,7 +29,7 @@ public class AfficheAide {
 			    +" indiquera qu'il a utilisé une lettre au moins"
 			    +" non autorisée, ou bien qu'une lettre manque. \n"
 			    +" Il ne marque pas de point. Ce sera ensuite au"
-			    +" joueur suivant de continuer la partie.\n\n"            
+			    +" joueur suivant de continuer la partie.\n"            
 			    + "- Si le joueur a une proposition qui n'est pas la bonne réponse, le"
     			    +"programme lui indiquera que ce mot n'est pas dans le dictionnaire\n"
                             +" ou n'est pas la réponse attendue. En effet, il se peut qu'un mot"
