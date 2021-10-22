@@ -19,17 +19,6 @@ public class AfficheAide {
      * @param args inutilisé
      */
     public static void main(String[] args){
+        final String Aide = "aCompleter";
         
-        /*
-         * ici on va commencer par créer une constante String appelé aide et l'initialisé
-         */
-        
-        /*
-         * ici on va créer une sorte de menu pour pouvoir afficher un menu et si la personne
-         * appuie sur a , il aura l'affichage de l'aide entrée ci-dessus
-         */
-        
-        /*
-         * y'a t-il des chose a rajouter ?
-         */
 } 
