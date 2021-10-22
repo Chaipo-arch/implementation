@@ -10,14 +10,12 @@ package Anagramme;
  * @author Julie
  */
 public class AfficheAide {
-    /*
+    /**
      * ici on va ecrire l'Etape 1 du sujet 
      * Anagramme
-     */
-    /**
-     * 
      * @param args non utilisé
      */
+	
     public static void main(String[] args){
         final String AIDE = "Au lancement du jeu, un mot est choisi de manière"
 							+" aléatoire. Il est aussitôt donné au joueur qui"
