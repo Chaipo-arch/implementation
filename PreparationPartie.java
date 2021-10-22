@@ -4,4 +4,5 @@
  * incorrecte, le programme en informera l’utilisateur. Si par contre, elles sont toutes correctes, un message 
  * de confirmation sera affiché.
  */
-// 4 variables
+// 4 variables 2 String 2 int 
+// 2 pseudo + 1 nbTour + 1 niveauDifficulter
