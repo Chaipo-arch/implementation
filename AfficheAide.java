@@ -30,5 +30,6 @@ public class AfficheAide {
          */
         
         /*
-         *
+         * y'a t-il des chose a rajouter ?
+         */
 } 
