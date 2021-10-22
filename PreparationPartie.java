@@ -5,5 +5,4 @@
  * de confirmation sera affiché.
  */
 // 4 variables 2 String 2 int 
-// 2 pseudo + 1 nbTour + 1 niveauDifficulter
-// 
+// 2 pseudo + 1 nbTour (minimum 4) + 1 niveauDifficultée (noit valeur 1 ou 2)
