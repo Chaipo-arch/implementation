@@ -32,7 +32,8 @@ public class PreparationPartie{
         System.out.print("veuillez entrez le niveau de difficulté "
                          + "(rappel entrez 1 pour le niveau facile et 2 pour le niveau difficile)");
         niveauDifficulte = saisie.nextInt();
-// 4 variables 2 String 2 int 
-// 2 pseudo + 1 nbTour (minimum 4) + 1 niveauDifficultée (soit valeur 1 ou 2)
+        //TODO verifiez que les pseudo entrez ne sont pas des chaine vide si chaine vide il faut que l'uttilisateur retape son pseudo
+        //TODO verifiez que le nb de tour entrez est bien un int et que c'est supérieur a 4 sinon l'utilisateur doit retaper
+        //TODO verifiez que le niveau de difficulté entre est bien un entier entre 1 et 2 sinon l'utilisateur doit retaper.
   }
 }
