@@ -7,12 +7,18 @@
 package implementation;
 
 import java.util.Scanner;
+
 /**
  *
  *
  *
  */
 public class PreparationPartie{
+    /**
+     *
+     *
+     *
+     */
     public static void main(String[] args){
         int nbTour,
             niveauDifficulte;
