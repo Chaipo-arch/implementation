@@ -4,20 +4,25 @@
  * incorrecte, le programme en informera l’utilisateur. Si par contre, elles sont toutes correctes, un message 
  * de confirmation sera affiché.
  */
+/*
+ * Groupe anagramme  
+ * 
+ * PreparationPartie.java
+ */
 package implementation;
 
 import java.util.Scanner;
 
 /**
  *
- *
- *
+ * @author Julie
+ * @author MrBribach
  */
 public class PreparationPartie{
     /**
      *
      *
-     *
+     * @param args non utilisé
      */
     public static void main(String[] args){
         int nbTour,
