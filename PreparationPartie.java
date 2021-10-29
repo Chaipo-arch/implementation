@@ -14,9 +14,6 @@ package implementation;
 import java.util.Scanner;
 
 /**
- *
- *
- *
  * @author Julie
  * @author MrBribach
  */
