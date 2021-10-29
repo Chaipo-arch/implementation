@@ -39,19 +39,19 @@ public class PreparationPartie{
         System.out.print("veuillez entrez le pseudo du joueur 1 : ");
 	pseudoUn = entree.next();
 	entree.nextLine();
-		if (pseudoUn.isBlank()==False) {
+	while (pseudoUn.isBlank()==False) {
+		System.out.println("Erreur, entrez de nouveau le pseudo du joueur 2");
+		pseudoUn = entree.next();
+		entree.nextLine();
+
+		System.out.print("veuillez entrez le pseudo du joueur 2 : ");
+		pseudoDeux = entree.next();
+		entree.nextLine();
+	}
+	while (!pseudoDeux.isBlank()) {
+		System.out.println("Erreur, entrez le pseudo du joueur 1");
+		pseudoDeux = entree.next();
+		entree.nextLine();
 		
-			System.out.print("veuillez entrez le pseudo du joueur 2 : ");
-			pseudoDeux = entree.next();
-			entree.nextLine();
-			if (pseudoDeux.isBlank()False) {
-				
-		
-			} else {
-				System.out.println("Erreur, entrez le pseudo du joueur 2");
-			}
-		} else {
-			System.out.println("Erreur, entrez le pseudo du joueur 1");
-		}
 	}
 }
