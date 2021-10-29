@@ -30,15 +30,16 @@ public class PreparationPartie{
       
         String pseudoUn,
                pseudoDeux;
+	boolean verificationSaisie ;
 			   
-        Scanner entree = Scanner(System.in);
+        Scanner entree = New Scanner(System.in);
         
         System.out.print("veuillez entrez le pseudo du joueur 1 : ");
-	pseudoUn = entree.next();
+	pseudoUn = entree.nextLine();
 	entree.nextLine();
-	while (pseudoUn.isBlank()==False) {
-		System.out.println("Erreur, entrez de nouveau le pseudo du joueur 2 : ");
-		pseudoUn = entree.next();
+	while (pseudoUn.isBlank()) {
+		System.out.println("Erreur, entrez de nouveau le pseudo du joueur 1 : ");
+		pseudoUn = entree.nextLine();
 		entree.nextLine();
 
 	}
@@ -47,30 +48,28 @@ public class PreparationPartie{
 	pseudoDeux = entree.next();
 	entree.nextLine();
 	 
-	while (!pseudoDeux.isBlank()) {
-		System.out.println("Erreur, entrez le pseudo du joueur 1 : ");
+	while (pseudoDeux.isBlank()) {
+		System.out.println("Erreur, entrez le pseudo du joueur 2 : ");
 		pseudoDeux = entree.next();
 		entree.nextLine();
 	}
 	    
 	System.out.print("veuillez entrez le nombre de tour : ");
-	    
-	while (entree.hasNextInt() || entree.nextInt() < 4) {
-		nbTour = entree.nextInt();
-		entree.nextInt();
-		System.out.println("Erreur, entrez un entier supérieur ou égal à 4. Recommencez :");
+	verificationSaisie = entree.hasNextInt;
+	entree.nextLine()
+	while (!verificationSaisie || entree.nextInt() < 4) {
+		System.out.print("Erreur, entrez un entier supérieur ou égal à 4. Recommencez :");
 		
 					
 	}
 	nbTour = entree.nextInt();
 	entree.nextInt();
+	    
 	System.out.print("veuillez entrer le niveau de difficulté "
 			 + "(rappel : entrez 1 pour le niveau facile et 2 pour le niveau difficile)");
-	
-	while (entree.hasNextInt() || entree.nextInt() == 1 || entree.nextInt() == 2) {
-		niveauDifficulte = entree.nextInt();
-		entree.nextInt();
-		System.out.println("Erreur, entrez 1 ou 2 pour choisir le niveau de difficulté. Recommencez : ");
+	entree.nextLine()
+	while (verificationSaisie || entree.nextInt() == 1 || entree.nextInt() == 2) {
+		System.out.print("Erreur, entrez 1 ou 2 pour choisir le niveau de difficulté. Recommencez : ");
 		
 					
 		
