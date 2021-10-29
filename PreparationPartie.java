@@ -57,7 +57,7 @@ public class PreparationPartie{
 	nbTour = entree.nextInt();
 	entree.nextInt();
 	    
-	while (entree.hasNextInt() || entree.nextInt < 4) {
+	while (entree.hasNextInt() || entree.nextInt() < 4) {
 		System.out.println("Erreur, entrez un entier supérieur ou égal à 4. Recommencez :");
 		nbTour = entree.nextInt();
 		entree.nextInt();
@@ -68,8 +68,10 @@ public class PreparationPartie{
 	niveauDifficulte = entree.nextInt();
 	entree.nextInt();
 	
-	while (entree.hasNextInt() || entree.nextInt == 1 || entree.nextInt == 2) {
-		System.out.println("Erreur, entrez 1 ou 2 pour choisir le niveau de difficulté, recommencez : ");
+	while (entree.hasNextInt() || entree.nextInt() == 1 || entree.nextInt() == 2) {
+		System.out.println("Erreur, entrez 1 ou 2 pour choisir le niveau de difficulté. Recommencez : ");
+		niveauDifficulte = entree.nextInt();
+	        entree.nextInt();
 					
 		
 	}
