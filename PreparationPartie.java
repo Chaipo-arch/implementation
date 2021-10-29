@@ -15,11 +15,14 @@ import java.util.Scanner;
 
 /**
  *
+ *
+ *
  * @author Julie
  * @author MrBribach
  */
 public class PreparationPartie{
     /**
+     *
      *
      *
      * @param args non utilisé
@@ -30,21 +33,41 @@ public class PreparationPartie{
       
         String pseudoUn,
                pseudoDeux;
-        Scanner saisie = Scanner(System.in);
+			   
+        Scanner entree = Scanner(System.in);
         
-        System.out.print("veuillez entrez le pseudo du joueur1 : ");
-        pseudoUn = saisie.next() ;
-        saisie.nextLine();
-        System.out.print("veuillez entrez le pseudo du joueur2 : ");
-        pseudoDeux = saisie.next() ;
-        saisie.nextLine();
-        System.out.print("veuillez entrez le nombre de tour : ");
-        nbTour = saisie.nextInt();
-        System.out.print("veuillez entrez le niveau de difficulté "
-                         + "(rappel entrez 1 pour le niveau facile et 2 pour le niveau difficile)");
-        niveauDifficulte = saisie.nextInt();
-        //TODO verifiez que les pseudo entrez ne sont pas des chaine vide si chaine vide il faut que l'uttilisateur retape son pseudo
-        //TODO verifiez que le nb de tour entrez est bien un int et que c'est supérieur a 4 sinon l'utilisateur doit retaper
-        //TODO verifiez que le niveau de difficulté entre est bien un entier entre 1 et 2 sinon l'utilisateur doit retaper.
-  }
+        System.out.print("veuillez entrez le pseudo du joueur 1 : ");
+		
+		if (entree.isBlank) {
+			pseudoUn = entree.next() ;
+			entree.nextLine();
+		
+			System.out.print("veuillez entrez le pseudo du joueur 2 : ");
+		
+			if (entree.isBlank) {
+				pseudoDeux = entree.next() ;
+				entree.nextLine();
+		
+				System.out.print("veuillez entrez le nombre de tour : ");
+
+				if (entree.hasNextInt() || entree.nextInt < 4) {
+					nbTour = entree.nextInt();
+		
+					System.out.print("veuillez entrer le niveau de difficulté "
+									 + "(rappel : entrez 1 pour le niveau facile et 2 pour le niveau difficile)");
+					if (entree.hasNextInt() || entree.nextInt == 1 || entree.nextInt == 2) {
+						niveauDifficulte = entree.nextInt();
+					} else {
+						System.out.println("Erreur, entrez 1 ou 2 pour choisir le niveau de difficulté.");
+					}
+				} else {
+					System.out.println("Erreur, entrez un entier supérieur ou égal à 4.");				
+				}
+			} else {
+				System.out.println("Erreur, entrez le pseudo du joueur 2");
+			}
+		} else {
+			System.out.println("Erreur, entrez le pseudo du joueur 1");
+		}
+	}
 }
