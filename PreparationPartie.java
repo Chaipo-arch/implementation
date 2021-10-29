@@ -37,14 +37,15 @@ public class PreparationPartie{
         Scanner entree = Scanner(System.in);
         
         System.out.print("veuillez entrez le pseudo du joueur 1 : ");
-	pseudoUn = entree.next() ;
-		if (pseudoUn.isBlank()) {
-			entree.nextLine();
+	pseudoUn = entree.next();
+	entree.nextLine();
+		if (pseudoUn.isBlank()==False) {
 		
 			System.out.print("veuillez entrez le pseudo du joueur 2 : ");
-			pseudoDeux = entree.next() ;
-			if (pseudoDeux.isBlank()) {
-				entree.nextLine();
+			pseudoDeux = entree.next();
+			entree.nextLine();
+			if (pseudoDeux.isBlank()False) {
+				
 		
 			} else {
 				System.out.println("Erreur, entrez le pseudo du joueur 2");
