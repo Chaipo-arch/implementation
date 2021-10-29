@@ -54,26 +54,28 @@ public class PreparationPartie{
 	}
 	    
 	System.out.print("veuillez entrez le nombre de tour : ");
-	nbTour = entree.nextInt();
-	entree.nextInt();
 	    
 	while (entree.hasNextInt() || entree.nextInt() < 4) {
-		System.out.println("Erreur, entrez un entier supérieur ou égal à 4. Recommencez :");
 		nbTour = entree.nextInt();
 		entree.nextInt();
+		System.out.println("Erreur, entrez un entier supérieur ou égal à 4. Recommencez :");
+		
 					
 	}
+	nbTour = entree.nextInt();
+	entree.nextInt();
 	System.out.print("veuillez entrer le niveau de difficulté "
 			 + "(rappel : entrez 1 pour le niveau facile et 2 pour le niveau difficile)");
-	niveauDifficulte = entree.nextInt();
-	entree.nextInt();
 	
 	while (entree.hasNextInt() || entree.nextInt() == 1 || entree.nextInt() == 2) {
-		System.out.println("Erreur, entrez 1 ou 2 pour choisir le niveau de difficulté. Recommencez : ");
 		niveauDifficulte = entree.nextInt();
-	        entree.nextInt();
+		entree.nextInt();
+		System.out.println("Erreur, entrez 1 ou 2 pour choisir le niveau de difficulté. Recommencez : ");
+		
 					
 		
 	}
+	niveauDifficulte = entree.nextInt();
+	entree.nextInt();
     }
 }
