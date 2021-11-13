@@ -22,7 +22,7 @@ public class PreparationPartieV2{
      * Programme principal.
      * @param args argument non utilisé
      */
-    public static void main(String[] args){
+      public static void main(String[] args){
         int nbTour,
             niveauDifficulte;
       
@@ -62,12 +62,16 @@ public class PreparationPartieV2{
          if(correct) {
 	     System.out.print("veuillez entrez le nombre de tour : ");
 	     verificationSaisie = entree.hasNextInt();
-	     nbTour = entree.nextInt();
 		
-	    if (verificationSaisie == false|| nbTour < 4) {
+	    if (verificationSaisie == false) {
 		System.out.println("Erreur, entrez un entier supérieur ou égal à 4.");
 		correct = false;
-	    }	
+	    }else {
+	    	 nbTour = entree.nextInt();
+	    	 if(nbTour < 4) {
+	    		 System.out.println("Erreur, entrez un entier supérieur ou égal à 4.");
+	    	 }
+	    }
 	}
 		       if (correct) {
 			         System.out.print("veuillez entrer le niveau de difficulté "
@@ -84,6 +88,7 @@ public class PreparationPartieV2{
        	}
 		}else {
 			correct = false;
+			 System.out.println("veuillez entrer un entier entre 1 ou 2 ");
 		}
 		
 		        }
