@@ -1,0 +1,29 @@
+/*
+ * 
+ */
+package anagramme;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * 
+ * @author MrBribach
+ * @author Julie
+ */
+public class MenuAnagramme {
+	/**
+	 * 
+	 * @param args non utilisé
+	 */
+    public static void main(String[]args) {
+    	Scanner saisie = new Scanner(System.in);
+	    System.out.println("*******************************************************************");
+	    System.out.println("                       MENU ANAGRAMME");
+	    System.out.println("*******************************************************************");
+	    System.out.println("* 1 : AfficheAide");
+	    System.out.println("tapez le numéro de ce que vous souhaitez afficher :");
+	    
+	}
+	      
+}
