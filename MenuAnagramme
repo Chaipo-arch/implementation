@@ -3,6 +3,7 @@
  */
 package anagramme;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -17,43 +18,50 @@ public class MenuAnagramme {
 	 * @param args non utilisé
 	 */
     public static void main(String[]args) {
-    	int numero;
+    	int numero = 0;
     	Scanner saisie = new Scanner(System.in);
+    	do {
 	    System.out.println("*******************************************************************");
 	    System.out.println("                       MENU ANAGRAMME");
 	    System.out.println("*******************************************************************");
-	    System.out.println("Option 1 : AfficheAide");
-	    System.out.println("Option 2 : PreparationPartie2Joueur");
-	    System.out.println("Option 3 : PreparationPartie1Joueur");
+	    System.out.println("Option 1 : Affichez les régle du jeu");
+	    System.out.println("Option 2 : Preparé une partie pour 2 joueur");
+	    System.out.println("Option 3 : Preparé une partie pour 1 joueur");
 	    System.out.println("Option 4 : Lancer le jeu");
 	    System.out.println("Option 5 : quittez le jeu");
 	    System.out.println("tapez le numéro de ce que vous souhaitez afficher :");
 	    if(!saisie.hasNextInt()) {
 	    	System.err.println("veuillez entrez un entier de 1 à 5");
-	    }
+	    }else {
 	    numero = saisie.nextInt();
 	    if(numero<1 && numero >5) {
 	    	System.err.println("l'entier entré doit être compris entre 1 et 5");
 	    }
-    	switch(numero) {
-    	case 1:
-    		AfficheAide.main(args);
-    		break;
-    	case 2:
-    		PreparationPartie2JoueurV2.main(args);
-    		break;
-    	case 3:
-    		PreparationPartie1Joueur.main(args);
-    	case 4:
-    		System.out.println("le jeu est pas encore fini");
-    		break;
-    	case 5:
-    		for(int i=0 ; i<100 ; i++) {
-    			System.out.println("");
-    		}
-    		System.out.print("Aurevoir");
-    		break;
-    	}
+    	    switch(numero) {
+    	    case 1:
+    	    	AfficheAide.main(args);
+    	    	break;
+    	    case 2:
+    	    	PreparationPartie2JoueurV2.main(args);
+    	    	break;
+    	    case 3:
+    	    	PreparationPartie1Joueur.main(args);
+    	    case 4:
+    	    	System.out.println("le jeu n'est pas encore fini");
+    	    	break;
+    	    case 5:
+    	    	for(int i=0 ; i<100 ; i++) {
+    	    		System.out.println("");
+    	    	}
+    	    	System.out.print("Aurevoir");
+    	    	break;
+    	    }
+    	    for(int i = 0 ; i < 10; i++) {
+    	    	System.out.println("");
+    	    }
+	    }
+    	}while(numero !=4 && numero !=5);
+    	
 	}
 	      
 }
